@@ -1,0 +1,63 @@
+/*Sección About*/
+
+section.about {
+    padding: 50px 50px;
+    background-color: #EAF2FD;
+}
+
+h3.about__title {
+    padding: 0 0px;
+    font-size: 26px;
+    color: #464646;
+}
+
+p {
+    color: #464646;
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media screen and (max-width: 768px) {
+
+    /*Sección About*/
+
+    section.about {
+        padding: 50px 40px;
+        background-color: #EAF2FD;
+    }
+
+    h3.about__title {
+        padding: 0 0px;
+        font-size: 26px;
+        color: #464646;
+    }
+
+    p {
+        color: #464646;
+    }
+
+}
+
+/*Mobile*/
+@media screen and (max-width: 425px) {
+    /*Sección About*/
+
+    section.about {
+        padding: 25px 25px;
+        background-color: #EAF2FD;
+    }
+
+    h3.about__title {
+        padding: 0 0px;
+        font-size: 20px;
+        color: #464646;
+    }
+
+    p {
+        color: #464646;
+    }
+
+}

@@ -1,0 +1,327 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+    :root {
+        /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+        /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+        --cor-de-fundo: #F5F5F5;
+        --cor-de-link: #000;
+    }
+
+    body {
+        box-sizing: border-box;
+        background-color: var(--cor-de-fundo);
+        font-family: 'Raleway';
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+    }
+
+    ul, h4 {
+        margin: 0;
+        padding: 0;
+    }
+
+    ol,
+    ul,
+    li {
+        list-style: none;
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--cor-de-link);
+    }
+
+    /*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+    /*-------------------------Sección Menu-------------------*/
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+    }
+
+    .menu__title {
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    /* --------------- HEADER ------ IMG Y H3 ----------*/
+    .menu__header {
+        display: flex;
+        width: 300%;
+        padding: 5px 20px;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        width: 1500%;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .menu__list__item {
+        display: flex;
+        display: inline-block;
+        width: 100;
+        padding: 10px 10px;
+        margin: auto;
+        align-items: center;
+        gap: 5px
+    }
+
+    .menu__list__item1 {
+        font-weight: bold;
+    }
+
+    /*---------------------------Sección Title---------------------------*/
+
+    .title {
+        padding: 50px 20px;
+    }
+
+    div.title__div {
+        display: flex;
+         margin-top: 0px;
+    }
+
+    img.title__profile {
+        width: 31%;
+        order: 1;
+        justify-content: space-between;
+        padding: 25px 30px;
+    } 
+
+    div.title__container {
+        justify-content: space-between;
+        margin-top: 70px;
+        margin-left: 30px;
+    }
+
+    h2.title__bio {
+        margin-top: 0px;
+        font-size: 60px;
+        text-align: start;
+        margin-bottom: 28px;
+        color: #464646;
+    }
+
+    p.title__subsection {
+        font-size: 24.5px;
+        color: #464646;
+
+    }
+
+    li.title__network__item {
+        display: flex;
+        display: inline-block;
+        justify-content: space-between;
+        margin-left: 0px;
+        font-size: 17px;
+        margin-right: 55px;
+        margin-top: 20px;
+    }
+
+    li img {
+        width: 2.1rem;
+    }
+
+
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media screen and (max-width: 770px) {
+
+    /* --------------- HEADER ------ IMG Y H3 ----------*/
+
+    .menu {
+        display: flex;
+    }
+    .menu__title {
+        padding: 5px;
+    }
+
+    .menu__header {
+        /* MENU DE NAVEGACION*/
+        display: flex;
+        align-items: center;
+        width: 1500%;
+        padding: 10px 20px;
+    }
+
+    nav {
+        display: flex;
+        width: 1500%;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    #hid {
+        display: none;
+    }
+
+    .menu__list__item {
+        display: flex;
+        display: inline-block;
+        padding: 10px 10px;
+        margin: auto;
+        align-items: center;
+        gap: 5px
+    }
+
+    .menu__list__item1 {
+        font-weight: bold;
+    }
+
+    /*---------------------------Sección Title---------------------------*/
+
+    .title {
+        padding: 30px 0px;
+    }
+
+    div.title__div {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    img.title__profile {
+        /* TAMAÑO DE IMG */
+        height: 25%;
+        width: 25%;
+        order: 1;
+        padding: 10px 20px;
+    }
+
+    div.title__container {
+        justify-content: space-between;
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+
+    h2.title__bio {
+        font-size: 30px;
+        text-align: start;
+        color: #464646;
+        padding: 30px 0 0 0;
+    }
+
+    p.title__subsection {
+        flex-wrap: wrap;
+        font-size: 18px;
+        color: #464646;
+    }
+
+    li.title__network__item {
+        font-size: 15px;
+        margin-right: 30px;
+    }
+
+    li img {
+        width: 1.5rem;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width: 425px) {
+
+     /* --------------- HEADER ------ IMG Y H3 ----------*/
+
+     .menu {
+        display: flex;
+    }
+    .menu__title { /* LOGO */
+        padding: 5px;
+        font-size: 0.9rem;
+    }
+
+    .menu__header { /* MENU DE NAVEGACION*/
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 5px 10px;
+    }
+
+    nav {
+        display: flex;
+        width: 5%;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 0.9rem;
+    }
+
+    #hid { /* LINKS OCULTOS */
+        display: none;
+    }
+
+    .menu__list__item1 {
+        font-weight: bold;
+    }
+
+    /*---------------------------Sección Title---------------------------*/
+
+    .title {
+        padding: 3px;
+    }
+
+    div.title__div {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0px;
+    }
+
+    img.title__profile {
+        /* TAMAÑO DE IMG */
+        height: 25%;
+        width: 25%;
+        order: 1;
+        padding: 0px 20px;
+    }
+
+    div.title__container {
+        padding: 0 5px 10px 0; 
+    }
+
+    h2.title__bio {
+        font-size: 20px;
+        text-align: start;
+        color: #464646;
+        padding: 30px 0 0 0;
+    }
+
+    p.title__subsection {
+        flex-wrap: wrap;
+        font-size: 15px;
+        color: #464646;
+    }
+
+    li.title__network__item {
+        font-size: 15px;
+        margin-right: 15px;
+    }
+
+    li img {
+        width: 1.3rem;
+    }
+}

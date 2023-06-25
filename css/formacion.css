@@ -1,0 +1,226 @@
+/* Experiencia Académica*/
+
+
+section.academic {
+    /* -----------------------------------------------*/
+    padding: 0px 20px 0px;
+    background-color: #EAF2FD;
+    display: flex;
+    display: block;
+    height: 330px;
+}
+
+.academic__title {
+    margin-bottom: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+div.academic__courses {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.academic__courses__box {
+    display: flex;
+    justify-content: center;
+    background: #FFFFFF;
+    width: 440px;
+    height: 160px;
+    margin-left: 30px;
+}
+
+.academic__courses__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo__icono1 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    width: 10rem;
+}
+
+.logo__icono2 {
+    margin-top: 40px;
+    margin-left: 70px;
+    margin-bottom: 50px;
+    width: 10rem;
+}
+
+.logo__icono {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 14rem;
+    margin-bottom: 10px;
+}
+
+li.academic__courses {
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-around;
+}
+
+.academic__courses__item__title {
+    margin: 0;
+}
+
+h4 {
+    margin: 2px;
+}
+
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media screen and (max-width: 768px) {
+    /* -----------------------------------------------*/
+
+    section.academic {
+        padding: 10px 20px 5px;
+        background-color: #EAF2FD;
+        display: flex;
+        display: block;
+        height: 330px;
+
+    }
+
+    .academic__title {
+        margin-bottom: 40px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    div.academic__courses {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.academic__courses__box {
+        display: flex;
+        justify-content: center;
+        background: #FFFFFF;
+        width: 410px;
+        height: 160px;
+        margin-left: 30px;
+
+    }
+
+    .academic__courses__item__img {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo__icono1 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 10rem;
+    }
+
+    .logo__icono2 {
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-bottom: 45px;
+        width: 10rem;
+    }
+
+    .logo__icono {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        width: 11rem;
+    }
+
+    li.academic__courses {
+        display: flex;
+        align-content: flex-start;
+        justify-content: space-around;
+    }
+
+    h4 {
+        flex-direction: row;
+        margin-top: 20px;
+    }
+
+}
+
+/*Mobile*/
+@media screen and (max-width: 425px) {
+    /* -----------------------------------------------*/
+
+    section.academic {
+        flex-direction: column;
+        background-color: #EAF2FD;
+        /* COLOR AZUL */
+        height: 850px;
+    }
+
+    .academic__title {
+        display: flex;
+        align-items: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    li.academic__courses {
+        display: flex;
+        align-content: flex-start;
+        justify-content: space-around;
+    }
+
+    .academic__courses__box {
+        display: flex;
+        padding: 10px 90px;
+        background-color: #FFFFFF;
+        width: 50px;
+        margin-bottom: 80px;
+    }
+
+    div.academic__courses {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .logo__icono1 {
+        margin-top: 0px;
+        margin-bottom: 20px;
+        width: 10rem;
+    }
+
+    .logo__icono2 {
+        margin-top: 40px;
+        margin-left: 70px;
+        margin-bottom: 65px;
+        width: 10rem;
+    }
+
+    .logo__icono {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        width: 11rem;
+    }
+    .logo__icono {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        width: 11rem;
+    }
+
+    h4 {
+        flex-direction: row;
+        margin-top: 0px;
+    }
+
+}

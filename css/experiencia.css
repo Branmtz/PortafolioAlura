@@ -1,0 +1,191 @@
+/* experiencia*/
+
+.experience__section__title {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+.experience__box {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 0px 50px;
+}
+
+.experience__box1 {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 16px;
+    padding: 30px 50px;
+
+}
+
+.experience__title {
+    margin-bottom: 10px;
+}
+
+.experience__text {
+    font-style: none;
+    font-family: 'Raleway';
+    color: #5a5a5a;
+    font-size: 15px;
+}
+
+.experiencia__botao--repo {
+    color: #2A7AE4;
+    border: 1.5px solid #2A7AE4;
+    margin-right: 20px;
+    width: 90px;
+    height: 35px;
+}
+
+.experience__botao--demo,
+.formcontato__botao {
+    border-style: none;
+    background-color: #2A7AE4;
+    color: white;
+    width: 90px;
+    height: 35px;
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media screen and (max-width: 768px) {
+
+    /* experiencia*/
+
+
+    .experience__section__title {
+        display: flex;
+        justify-content: center;
+        padding: 25px;
+    }
+
+    .experience__box {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 16px;
+        padding: 10px 30px;
+    }
+
+    .experience__box1 {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 16px;
+        padding: 10px 30px;
+    }
+
+    .experience__img {
+        width: 650px
+    }
+
+    .experience__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .experience__title {
+        margin-bottom: 5px;
+    }
+
+    .experience__text {
+        font-style: none;
+        font-family: 'Raleway';
+        color: #5a5a5a;
+        font-size: 15px;
+    }
+
+    button {
+        width: 90px;
+        height: 35px;
+    }
+
+    .experiencia__botao--repo {
+        color: #2A7AE4;
+        border: 1.5px solid #2A7AE4;
+        margin-right: 20px;
+    }
+
+    .experience__botao--demo,
+    .formcontato__botao {
+        border-style: none;
+        background-color: #2A7AE4;
+        color: white;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width: 425px) {
+
+    /* experiencia*/
+
+
+    .experience__section__title {
+        display: flex;
+        justify-content: center;
+        padding: 25px;
+    }
+
+    .experience__box {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 16px;
+        padding: 10px 30px;
+    }
+
+    .experience__box1 {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 16px;
+        padding: 10px 30px;
+    }
+
+    .experience__img {
+        width: 350px
+    }
+
+    .experience__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .experience__title {
+        margin-bottom: 5px;
+    }
+
+    .experience__text {
+        font-style: none;
+        font-family: 'Raleway';
+        color: #5a5a5a;
+        font-size: 15px;
+    }
+
+    button {
+        width: 90px;
+        height: 35px;
+    }
+
+    .experiencia__botao--repo {
+        color: #2A7AE4;
+        border: 1.5px solid #2A7AE4;
+        margin-right: 20px;
+    }
+
+    .experience__botao--demo,
+    .formcontato__botao {
+        border-style: none;
+        background-color: #2A7AE4;
+        color: white;
+    }
+}
