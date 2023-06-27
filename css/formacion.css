@@ -1,17 +1,17 @@
 /* Experiencia Académica*/
 
 
-section.academic {
-    /* -----------------------------------------------*/
-    padding: 0px 20px 0px;
-    background-color: #EAF2FD;
-    display: flex;
+section.academic {/* -----------------------------------------------*/
     display: block;
-    height: 330px;
+    justify-content: center;
+    padding: 0px 100px 100px ;
+    background-color: #EAF2FD;
+    
+    
 }
 
 .academic__title {
-    margin-bottom: 50px;
+    padding: 50px;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -27,7 +27,7 @@ div.academic__courses {
     display: flex;
     justify-content: center;
     background: #FFFFFF;
-    width: 440px;
+    width: 300px;
     height: 160px;
     margin-left: 30px;
 }
@@ -65,9 +65,11 @@ li.academic__courses {
 }
 
 .academic__courses__item__title {
-    margin: 0;
+    text-align: center;
 }
-
+.academic__courses__item__subtitle {
+    text-align: center;
+}
 h4 {
     margin: 2px;
 }
@@ -82,16 +84,15 @@ Utiliza las referencias de los breakpoints @media abajo */
     /* -----------------------------------------------*/
 
     section.academic {
-        padding: 10px 20px 5px;
-        background-color: #EAF2FD;
-        display: flex;
         display: block;
-        height: 330px;
+        justify-content: center;
+        padding: 0px 100px 110px;
+        background-color: #EAF2FD;
 
     }
 
     .academic__title {
-        margin-bottom: 40px;
+        padding: 40px;
         display: flex;
         text-align: center;
         justify-content: center;
@@ -105,28 +106,38 @@ Utiliza las referencias de los breakpoints @media abajo */
 
     div.academic__courses__box {
         display: flex;
+        align-items: center;
         justify-content: center;
         background: #FFFFFF;
-        width: 410px;
-        height: 160px;
+        width: 430px;
+        height: 140px;
         margin-left: 30px;
 
     }
 
     .academic__courses__item__img {
         display: flex;
+        justify-content: center;
         align-items: center;
+        padding-top: 100px;
+        width: 200px;
     }
 
+    .academic__courses__item__title {
+        display: flex;
+        justify-content: center;
+    }
+
+    .academic__courses__item__subtitle{
+
+    }
     .logo__icono1 {
-        margin-top: 0px;
-        margin-bottom: 0px;
         width: 10rem;
     }
 
     .logo__icono2 {
-        margin-top: 40px;
-        margin-left: 20px;
+        margin-top: 55px;
+        margin-left: 1px;
         margin-bottom: 45px;
         width: 10rem;
     }
@@ -166,7 +177,6 @@ Utiliza las referencias de los breakpoints @media abajo */
 
     .academic__title {
         display: flex;
-        align-items: column;
         justify-content: center;
         text-align: center;
         font-size: 25px;
@@ -180,7 +190,7 @@ Utiliza las referencias de los breakpoints @media abajo */
 
     .academic__courses__box {
         display: flex;
-        padding: 10px 90px;
+        padding: 20px 80px;
         background-color: #FFFFFF;
         width: 50px;
         margin-bottom: 80px;
