@@ -36,6 +36,7 @@ coloque nas sessões indicadas*/
         text-decoration: none;
         color: var(--cor-de-link);
     }
+    
 
     /*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
 
@@ -126,8 +127,11 @@ https://en.bem.info/methodology/quick-start/*/
 
     p.title__subsection {
         font-size: 24.5px;
-        color: #464646;
-
+        color: #818080;
+    }
+    span {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #797979;
     }
 
     li.title__network__item {
@@ -230,7 +234,12 @@ Utiliza las referencias de los breakpoints @media abajo */
     p.title__subsection {
         flex-wrap: wrap;
         font-size: 18px;
-        color: #464646;
+        color: #818080;
+    }
+    
+    span {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #797979;
     }
 
     li.title__network__item {
@@ -313,7 +322,12 @@ Utiliza las referencias de los breakpoints @media abajo */
     p.title__subsection {
         flex-wrap: wrap;
         font-size: 15px;
-        color: #464646;
+        color: #818080;
+    }
+
+     span {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #797979;
     }
 
     li.title__network__item {

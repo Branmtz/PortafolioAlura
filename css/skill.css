@@ -17,7 +17,8 @@ h3.skills__title {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 0 30px;
+    justify-content: center;
+    padding: 0 0px;
 }
 
 .skills__box {
@@ -71,10 +72,12 @@ h3.hobbies__title {
     padding: 15px;
 }
 
-div.hobbies__line {
+.hobbies__line {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 0 55px;
+    justify-content: center;
+    padding: 0 0px;
 }
 
 div.hobbies__box {
@@ -119,6 +122,8 @@ Utiliza las referencias de los breakpoints @media abajo */
     div.skills__line {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
         padding: 0 10px;
     }
 
@@ -172,6 +177,8 @@ Utiliza las referencias de los breakpoints @media abajo */
     div.hobbies__line {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
         padding: 0 10px;
     }
 
@@ -221,6 +228,8 @@ Utiliza las referencias de los breakpoints @media abajo */
     div.skills__line {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
         padding: 0 10px;
     }
 
@@ -279,6 +288,8 @@ Utiliza las referencias de los breakpoints @media abajo */
     div.hobbies__line {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
         padding: 0 10px;
     }
 
